@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="folderfavicon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Street Construction Permits</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Contents.css">
+        <link rel="stylesheet" href="Peek.css">
+    </head>
+    <body>
+        <div class="nav">
+            <div id="message"><a href="index.html">Home</a></div>
+         <div id="tabs">
+            <a id="p2"><p>Contents</p></a>
+             <a id="p3" href="Data.html"><p>Data</p></a>
+         </div>
+         </div>
+        </div>
+        <div class="folders">
+         <img id="folderTwo" src="folder3.svg">
+         <img id="folderThree" src="Folder4.svg">
+         </div>
+        <div class="information">
+            <h2>What’s in this data set?</h2><br>
+            <br class="break">
+            <span>permit Number:</span><br>
+            Unique 13-digit number <br>
+            <br class="break">
+            </span>Date Issued:</span><br>
+            Month, day and year the permit application was issued.<br>
+            <br class="break">
+            <span>permit purpose:</span><br>
+            Short description of why the permit application was issued.<br>
+            <br class="break">
+            <span>Permit Type:</span><br>
+            Short description of the permit type, including New, Renew, and Emergency. <br>
+            <br class="break">
+            <span>Permittee:</span><br>
+            Who is given the permit or other authorization.<br>
+            <br class="break">
+            <span>Street Name:</span><br>
+            The name of the street that construction was approved to take place on.<br>
+            <br class="break">
+            <span>Approved or Denied:</span><br>
+            Whether the permit was issued and printed or the application was denied.<br>
+        </div>
+    </div>
+    <div class="Samples">
+       <div id="images">
+           <img src="Sample Permits.svg" alt="Sample Permits">
+       </div>
+    </div>
+
+    <div id="square"></div>
+
+    <section id="container">
+    </section>
+
+    <audio id="folderAudio">
+        <source src="Folder Opening Sound Effect.mp3">
+      </audio>
+    
+        
+        <!-- <script src="index.js" async defer></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" ></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <script src="Peek.js" async defer></script>
+                  <!-- Folder Audio on Page Load -->
+                  <script>
+                    window.onload = function() {
+                    document.getElementById("folderAudio").play();
+          }
+                    </script>
+        
+    </body>
+</html>

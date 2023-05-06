@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="folderfavicon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Street Construction Permits</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="About.css">
+        <link rel="stylesheet" href="Peek.css">
+
+    </head>
+    <body>
+        <div class="nav">
+            <div id="message"><a href="index.html">Home</a></div>
+         <div id="tabs">
+             <a id="p1"><p>About</p></a>
+             <a id="p2" href="Contents.html"><p>Contents</p></a>
+             <a id="p3" href="Data.html"><p>Data</p></a>
+         </div>
+         </div>
+        </div>
+        <div class="folders">
+         <img id="folderOne" src="firstTwoFolders.svg">
+         <img id="folderTwo" src="folder3.svg">
+         <img id="folderThree" src="Folder4.svg">
+         </div>
+         <div class="information">
+            <h2>About this data set</h2>
+                <br>
+                <p>
+                <span>Updated:</span><br>
+                April 19, 2023<br>
+                <br>
+                <span>Date Created:</span><br>
+                December 17, 2018<br>
+                <br>
+                <span>Provided By:</span><br>
+                Department of Transportation (DOT)<br>
+                <br>
+                <span>Data collection:</span><br>
+                DOT Street Construction Permits<br>
+                <br>
+                <span>Update:</span><br>
+                Daily<br>
+                <br>
+                <span>Data Set owner:</span><br>
+                NYC OpenData<br>
+                </p>
+         </div>
+         <div class="Samples">
+            <div id="images">
+                <img src="Sample Permits.svg" alt="Sample Permits">
+            </div>
+         </div>
+
+         <section id="container">
+        </section>
+
+        <audio id="folderAudio">
+            <source src="Folder Opening Sound Effect.mp3">
+          </audio>
+            
+          <div id="square"></div>
+          <div id="square2"></div>
+          
+            <!-- <script src="index.js" async defer></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" ></script>
+            <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+            <script src="Peek.js" async defer></script>
+            <!-- Folder Audio on Page Load -->
+            <script>
+                window.onload = function() {
+                document.getElementById("folderAudio").play();
+      }
+                </script>
+    </body>
+</html>

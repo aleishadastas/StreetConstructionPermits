@@ -1,0 +1,246 @@
+/* Font Families */
+@font-face {
+    font-family: "Raleway";
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Bando";
+    src: url(bando-Regular.otf);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FEEEE2;
+    overflow: hidden;
+}
+
+/* LANDING PAGE STYLES */
+/* Page Introduction */
+#Title{
+font-family: "Raleway";
+font-size: 6vw;
+line-height: 5.8vw;
+margin-top: 11vw;
+margin-left: 8vw;
+font-weight: bold;
+}
+
+#Description{
+    font-family: "Bando";
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 2vw;
+    margin-left: 8vw;
+    padding-right: 49vw;
+    font-weight: normal;
+}
+/* Information */
+.info{
+    font-family: "Bando";
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
+#nyc{
+ position: absolute;
+ left:47vw;
+ top: 2vw;
+}
+#year{
+    position: absolute;
+    left:47vw;
+    bottom:2vw;
+}
+
+
+/* NAVIGATION */
+.nav{
+    transform: rotate(90deg);
+}
+/* Nav Tabs */
+img{
+    margin-top: -42.5vw;
+    height: 55.5vw;
+    width: auto;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    }
+    
+    #folderOne{
+      z-index: -1;  
+      position: fixed;
+    }
+
+    
+    #folderTwo{
+        z-index: -2; 
+        position: fixed; 
+        margin-left: 2vw;
+      }
+    
+    #folderThree{
+        z-index: -3;  
+        position: fixed;
+        margin-left: 8vw;
+      }
+
+
+/* Links and Pages */
+#tabs{
+ font-family: "Raleway";
+ font-weight: bold;
+ font-size: 2.2vw;
+ color: black;
+}
+#tabs a{
+    color: black;
+    text-decoration: none;
+}
+
+/* About Tab */
+#p1{
+margin-left: 53.5vw;
+margin-top: -15vw;
+position: absolute;
+}
+/* Contents Tab */
+#p2{
+    margin-left: 58.5vw;
+    margin-top: -23.5vw;
+    position: absolute;
+}
+/* Data Tab */
+#p3{
+    margin-top: -39.5vw;
+    margin-left: 68vw;
+    position: absolute;
+}
+/* Tab Hover States */
+#p1:hover{
+    color: red;
+}
+#p2:hover{
+    color: green;
+}
+#p3:hover{
+    color: blue;
+}
+/* Yellow Scroll Message */
+#message{
+    font-family: "Bando";
+    font-size: 1.5vw;
+    border: 1.5px solid black;
+    background-color: #FFD749;
+    width: 54vw;
+    padding-left: 2vw;
+    line-height: 3vw;
+    margin-left: 38vw;
+    margin-top: -50.1vw;
+    position: fixed;
+}
+
+/* CONTENTS SAMPLE PERMITS */
+#images{
+    z-index: -2; 
+    margin-top: 0.8vw;  
+    margin-left: 39vw;
+    position: fixed;
+   }
+
+/* MEDIA QUERIES */
+/*Ipad/Tablets*/
+@media only screen and (max-width: 600px){
+    #Title{
+        margin-top: 65vw;
+        margin-left: 10vw;
+        font-size: 10vw;
+        line-height: 10vw;
+        }
+        
+        #Description{
+            margin-top: 4vw;
+            margin-left: 10vw;
+            font-size: 4vw;
+            line-height: 4.5vw;
+            padding-right: 11vw;
+        }
+        #Description br {
+            display: none;
+            }
+.nav{
+    transform: rotate(0deg);
+}
+/* Folders */
+img{
+    transform: rotate(-90deg) scale(1.81);
+    margin-top: -86vw;
+    /* height: auto;
+    width: 101vw; */
+    margin-left: 7vw;
+    }
+    #folderTwo{
+        z-index: -2; 
+        position: fixed; 
+        margin-left: 7vw;
+      }
+    
+    #folderThree{
+        z-index: -3;  
+        position: fixed;
+        margin-left: 7vw;
+      }
+    #p1{
+        margin-left: 25.5vw;
+        margin-top: -28vw;
+        position: absolute;
+        font-size: 4vw;
+        }
+        /* Contents Tab */
+        #p2{
+            margin-left: 35.5vw;
+            margin-top: -40vw;
+            position: absolute;
+            font-size: 4vw;
+        }
+        /* Data Tab */
+        #p3{
+            margin-top: -58vw;
+            margin-left: 52.5vw;
+            position: absolute;
+            font-size: 4vw;
+        }
+        /* exclusive and inclusive are two sides of the spectrum */
+        #message{
+            font-size: 4vw;
+            padding-left: 3vw;
+            line-height: 7vw;
+            margin-left: -0.3vw;
+            margin-top: -65.2vw;
+            position: fixed;
+            width: 100vw;
+        }
+        
+        /* CONTENTS SAMPLE PERMITS */
+#images{
+    margin-top: 0.8vw;  
+    margin-left: 30vw;
+    position: fixed;
+    width: 2vw;
+    margin-top: -50vw;
+   }
+   #square{
+    color: #FFD749;
+   }
+   .info{
+    display: none;
+   }
+}
+
+/* add rotate to ipad version? */
+
+

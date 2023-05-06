@@ -1,0 +1,274 @@
+/* Font Families */
+@font-face {
+    font-family: "Raleway";
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Bando";
+    src: url(bando-Regular.otf);
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FEEEE2;
+    overflow: hidden;
+}
+
+#container{
+    /* margin-right: 30vw;
+    margin-top: 22vw; */
+    flex-wrap: wrap;
+    cursor: grab;
+}
+#container:active{
+    cursor: grabbing;
+}
+
+
+/* PERMIT STYLES */
+.permit{
+    border: 1px solid black;
+    padding: 2vw;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.24);
+    margin-bottom: 2vw ;
+    background-color: white;
+    width: 21vw;
+    height: 15vw;
+    opacity: 100%;
+    }
+    /* .permit:hover{
+        /* background: url("link") no-repeat; 
+        color: transparent;
+    } */
+
+    /* .permit:hover .lines{
+        opacity: 0%;
+    }      */
+    
+    h1{
+        font-size: 1vw;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: -1vw;
+    }
+    
+
+       /* TEXT STYLES */
+    /* Permit Number */
+    #number{
+        text-transform: uppercase;
+        margin-top: -1.5vw;
+    }
+
+    #date{
+        float: right;
+        margin-right: 1vw;
+        margin-top: -4.3vw;
+    }
+
+    #purpose{
+        margin-top: 2.5vw;
+        margin-bottom: 3vw;
+    }
+
+    #type{
+     margin-right: 1vw;
+    }
+
+    #street{
+      float: right;  
+      /* margin-right: 0.5vw; */
+      margin-top: -4.3vw;
+    }
+
+    #container p {
+        font-size: 1vw;
+        text-transform: lowercase;
+
+    }
+
+
+    /* LINES */
+    #line1{
+     transform: rotate(90deg);
+     width: 5vw;
+     position: absolute;
+     margin-top: 0.5vw;
+     border-top: 0.75px solid black;
+     margin-left: 8.5vw;
+    }
+
+    #line2{
+    position: absolute;
+    width: 25vw;
+    border-top: 0.75px solid black;
+    margin-left: -2vw;
+    margin-top: 3vw;
+    }
+
+    #line3{
+        position: absolute;
+        width: 25vw;
+        border-top: 0.75px solid black;
+        margin-left: -2vw;
+        margin-top: 8.5vw;
+    }
+
+
+    /* NAVIGATION */
+.nav{
+    transform: rotate(90deg);
+}
+
+/* Nav Tabs or Folders */
+img{
+    margin-top: -0.1vw;
+    height: 55.2vw;
+    /* width: 100vw; */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    }
+    
+ #folderThree{
+        z-index: -3;  
+        position: fixed;
+        margin-left: 8.5vw;
+      }
+
+/* Links and Pages */
+#tabs{
+ font-family: "Raleway";
+ font-weight: bold;
+ font-size: 2.2vw;
+ color: black;
+}
+
+#tabs a{
+    color: black;
+    text-decoration: none;
+}
+/* Data Tab */
+#p3{
+    margin-top: -39.5vw;
+    margin-left: 79vw;
+    position: absolute;
+}
+/* Yellow Scroll Message */
+#message{
+    font-family: "Bando";
+    font-size: 1.5vw;
+    border: 1.5px solid black;
+    background-color: #FFD749;
+    width: 55vw;
+    padding-left: 2vw;
+    line-height: 3vw;
+    margin-left: 48.9vw;
+    margin-top: -50.2vw;
+    position: fixed;
+}
+/* Return to Home Button */
+#message a{
+    color: black;
+    text-decoration: none;
+}
+/* Home Button Hover State*/
+#message:hover a{
+    text-decoration: underline;
+}
+#note{
+position: fixed;
+margin-top: -3vw;
+margin-left: 25vw;
+margin-right: -10vw;
+}
+
+#square{
+    height: 900px;
+    width: 506px;
+    background-color: #FEEEE2;
+}
+
+.drop{
+    transform: rotate(90deg);
+}
+#drop-tab{
+    position: fixed;
+    right: 38vw;
+    margin-top: -36.03vw;
+    transform: scale(.75) translate(50%, -50%);
+    transform-origin: top right;
+}
+
+#drop-here{
+    position: absolute;
+    font-family: "Bando";
+    right: 32.7vw;
+    margin-top: -36.9vw;
+    z-index: 2;
+    font-size: 1.35vw;
+}
+.hidden {
+    display: none;
+  }
+  
+
+
+/* MEDIA QUERIES */
+/*Ipad/Tablets*/
+@media only screen and (max-width: 768px){
+    .drop {
+        opacity: 0%;
+    }
+    .nav{
+        transform: rotate(0deg);
+    }
+    /* Folders */
+    #folderThree{
+        transform: rotate(-90deg) scale(1.82);
+        margin-top: 25.5vw;
+        left: -1vw;
+        /* height: auto;
+        width: 101vw; */
+        }
+        #container{
+            transform: rotate(90deg) scale(1.52);
+            margin-left: 92vw;
+            margin-top: 24vw;
+            opacity:none;
+        }
+        #message{
+        margin-top: -24.3vw;
+        font-size: 4vw;
+        width: 100vw;
+        line-height: 7vw;
+        margin-left: -0.8vw
+        }
+        #note{
+            position: fixed;
+            margin-top: -7vw;
+            right: 12vw;
+            /* opacity:0%; */
+            }
+/* Data Tab */
+#p3{
+    margin-top: -16.5vw;
+    margin-left: 52.5vw;
+    position: absolute;
+    font-size: 4vw;
+    z-index: 1;
+}
+body{
+    overflow: hidden;
+}
+img{
+transform: scale(1);
+margin-top: 
+}
+}

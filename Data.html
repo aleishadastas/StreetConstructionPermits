@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="folderfavicon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Street Construction Permits</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Data.css">
+    </head>
+    <body>
+        <div class="nav">
+            <div id="message"><a href="index.html">Home</a>
+                <p id="note">Drag, move, and hover over the permits</p>
+            </div>
+            
+         <div id="tabs">
+             <a id="p3"><p>Data</p></a>
+         </div>
+         </div>
+         <div class="folders">
+            <img id="folderThree" src="Folder4.svg">
+            </div>
+
+            <div class="drop">
+            <svg id="drop-tab" width="252" height="49" viewBox="0 0 252 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 0.99999L231 0.999999C242.046 1 251 9.95431 251 21L251 48L0.999998 48L0.999999 21C1 9.9543 9.9543 0.999989 21 0.99999Z" fill="#FFE3E3" stroke="black" stroke-width="2"/>
+                </svg> <p id="drop-here">Drop permits here</p> </div>
+                <div id="droppable-area"></div>
+
+         <section id="container">
+		</section>
+
+        <div id="square"></div>
+
+        <audio id="folderAudio">
+            <source src="Folder Opening Sound Effect.mp3">
+          </audio>
+
+            <div class="my-shape"></div>
+        <!-- Drag & Drop Libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" ></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <script src="jquery.ui.touch-punch.min.js"></script>
+
+        <script src="Data.js" async defer></script>
+          <!-- Folder Audio on Page Load -->
+          <script>
+            window.onload = function() {
+            document.getElementById("folderAudio").play();
+            }            
+            </script>
+
+<script>
+    const permit = document.querySelector('.permit');
+    const folderThree = document.querySelector('#folderThree');
+  
+    folderThree.addEventListener('dragover', function(event) {
+      event.preventDefault();
+      permit.style.opacity = '0%';
+    });
+  
+    folderThree.addEventListener('dragleave', function(event) {
+      event.preventDefault();
+      permit.style.opacity = '100%';
+    });
+  </script>
+
+    </body>
+</html>
